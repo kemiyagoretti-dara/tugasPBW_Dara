@@ -1,0 +1,238 @@
+/* Mengatur tampilan dasar seluruh halaman */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+/* Mengatur pembungkus utama website */
+.website {
+  min-height: 100vh;
+}
+
+/* ==================== HEADER ==================== */
+
+/* Mengatur bagian atas website */
+header {
+  text-align: center;
+  padding: 35px 20px;
+  background-color: #ec407a;
+  color: white;
+}
+
+/* Mengatur judul website */
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Mengatur nama mahasiswa */
+header p {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+/* ==================== NAVIGASI ==================== */
+
+/* Mengatur menu navigasi */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur tombol menu */
+nav button {
+  background-color: #f48fb1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Mengubah tampilan tombol saat diarahkan kursor */
+nav button:hover {
+  background-color: #d81b60;
+}
+
+/* ==================== MAIN ==================== */
+
+/* Mengatur area utama */
+main {
+  max-width: 1000px;
+  min-height: 500px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Mengatur judul setiap bagian */
+main h2 {
+  text-align: center;
+  color: #c2185b;
+}
+
+/* ==================== PROFIL ==================== */
+
+/* Mengatur tampilan profil */
+.profil {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Mengatur teks profil */
+.profil p {
+  margin: 10px;
+}
+
+/* ==================== MATA KULIAH ==================== */
+
+/* Mengatur kumpulan kartu mata kuliah */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Mengatur kartu mata kuliah */
+.card {
+  width: 200px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Mengatur nama mata kuliah */
+.card h3 {
+  color: #d81b60;
+}
+
+/* ==================== KEHADIRAN ==================== */
+
+/* Mengatur bagian kehadiran */
+.kehadiran {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Mengatur angka kehadiran */
+.kehadiran p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ==================== DAFTAR TUGAS ==================== */
+
+/* Mengatur bagian daftar tugas */
+.daftar-tugas {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Mengatur input tugas */
+.daftar-tugas input {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #f48fb1;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Mengatur tombol */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 7px;
+  background-color: #ec407a;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mengubah warna tombol saat diarahkan kursor */
+button:hover {
+  background-color: #ad1457;
+}
+
+/* Mengatur tombol filter */
+.filter {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Menghilangkan bullet pada daftar tugas */
+.daftar-tugas ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Mengatur setiap tugas */
+.daftar-tugas li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+  padding: 12px;
+  background-color: #fff0f5;
+  border-radius: 8px;
+}
+
+/* Membuat nama tugas mengambil ruang yang tersedia */
+.daftar-tugas li span {
+  flex: 1;
+  text-align: left;
+}
+
+/* ==================== FOOTER ==================== */
+
+/* Mengatur bagian bawah website */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ad1457;
+  color: white;
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Mengatur tampilan pada layar kecil */
+@media (max-width: 600px) {
+
+  /* Membuat input lebih lebar pada HP */
+  .daftar-tugas input {
+    width: 90%;
+  }
+
+  /* Membuat tugas lebih fleksibel pada layar kecil */
+  .daftar-tugas li {
+    flex-wrap: wrap;
+  }
+
+  /* Mengatur ukuran judul */
+  header h1 {
+    font-size: 26px;
+  }
+}
