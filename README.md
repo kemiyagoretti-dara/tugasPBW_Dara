@@ -1,4 +1,4 @@
-## DESKRIPSI
+## DESKRIPSI TUGAS PRAKTIKUM DARA
 
 Website Mahasiswa ini merupakan aplikasi sederhana yang dibuat menggunakan React JS dan Vite. Website ini dibuat untuk memenuhi tugas praktikum Pemrograman Berbasis Web.
 
